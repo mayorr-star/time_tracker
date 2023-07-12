@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&family=Poppins:ital,wght@0,700;1,400;1,800&family=Roboto:ital,wght@0,400;1,700&family=Rubik:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(226, 43%, 10%);
+  font-family: "Rubik", sans-serif;
+}
+.profile {
+  background-color: hsl(246, 80%, 60%);
+  padding: 20px;
+  border-radius: 10px;
+  min-height: 200px;
+  width: 200px;
+  position: relative;
+  z-index: 1;
+}
+.profile img {
+  width: 40%;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.owner {
+  display: block;
+  color: hsl(236, 100%, 87%);
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+.name {
+  color: #fff;
+  display: inline-block;
+  font-size: 25px;
+  width: 10%;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.basis {
+  background-color: hsl(235, 46%, 20%);
+  color: hsl(235, 45%, 61%);
+  font-weight: 500;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+  position: relative;
+  width: 200px;
+  bottom: 3%;
+}
+.basis span {
+  display: block;
+  font-size: 12px;
+  padding: 10px;
+}
+.category {
+  background-color: hsl(235, 46%, 20%);
+}
+.time-tracker {
+  display: flex;
+  gap: 30px;
+}
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.category {
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  min-height: 150px;
+}
+.category-box {
+  position: relative;
+}
+.category span {
+  display: block;
+}
+.activity {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.time-spent {
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+}
+.active{
+  color: hsl(236, 100%, 87%);
+}
+button {
+  outline: none;
+  border: none;
+  background: none;
+  position: absolute;
+  top: 15%;
+  left: 80%;
+}
+button:hover{
+  cursor: pointer;
+}
+.previous-time {
+  color: hsl(236, 100%, 87%);
+  font-size: 12px;
+}
+.activities {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  gap: 25px;
+  padding-top: 30px;
+}
+.social-style,
+.work-style,
+.play-style,
+.exercise-style,
+.study-style,
+.self-care-style {
+  padding-left: 5px;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 10px 10px 0 0;
+  position: absolute;
+  width: 100%;
+  bottom: 90%;
+}
+.image {
+  width: 20%;
+}
+.social-style img {
+  width: 15%;
+}
+.exercise-style img {
+  width: 28%;
+}
+.social-style {
+  background-color: hsl(264, 64%, 52%);
+}
+.work-style {
+  background-color: hsl(15, 100%, 70%);
+}
+.study-style {
+  background-color: hsl(348, 100%, 68%);
+}
+.exercise-style {
+  background-color: hsl(145, 58%, 55%);
+}
+.self-care-style {
+  background-color: hsl(43, 84%, 65%);
+}
+.play-style {
+  background-color: hsl(195, 74%, 62%);
+}
+.basis span:hover {
+  color: hsl(236, 100%, 87%);
+  cursor: pointer;
+}
+.category:hover {
+  background-color: hsl(235, 45%, 61%);
+  cursor: pointer;
+}
+
+
+/* For mobile */
+@media screen and (max-width:375px) {
+    .time-tracker{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0 50px 0;
+    }
+    .activities{
+        grid-template-columns: none;
+        row-gap: 70px;
+    }
+    .category-box{
+        width: 330px;
+    }
+    main{
+        position: relative;
+        left: 0;
+        transform: translate(0, 0);
+    }
+    .profile{
+        width: 330px;
+        display: flex;
+        justify-content: space-around;
+        min-height: 20px;
+    }
+    .basis{
+        width: 330px;
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+    }
+    .profile-container{
+        position: relative;
+        min-height: 200px;
+    }
+    .profile img{
+        width: 100%;
+    }
+    .img{
+        width: 20%;
+    }
+    .name{
+        width: 100%;
+        color: hsl(236, 100%, 87%);
+    }
+}
